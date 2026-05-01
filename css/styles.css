@@ -250,6 +250,20 @@ a:hover { border-bottom-color: var(--focs-gold); }
 }
 .btn--on-navy:hover { background: rgba(255,255,255,0.08); }
 
+.btn--gold {
+  background: var(--focs-gold);
+  color: var(--focs-navy);
+  border-top: 2px solid var(--focs-gold-deep);
+  box-shadow: 0 1px 2px rgba(30,39,97,0.12), 0 6px 14px -8px rgba(30,39,97,0.3);
+}
+.btn--gold:hover {
+  background: var(--focs-gold-deep);
+  color: var(--focs-white);
+  box-shadow: 0 1px 2px rgba(30,39,97,0.12), 0 12px 22px -10px rgba(30,39,97,0.38);
+  transform: translateY(-1px);
+}
+.btn--gold:active { transform: none; }
+
 /* =========================================================================
    HERO
    ========================================================================= */
