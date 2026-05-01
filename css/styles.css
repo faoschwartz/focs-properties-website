@@ -218,6 +218,7 @@ a:hover { border-bottom-color: var(--focs-gold); }
   align-items: center; gap: 10px;
   text-decoration: none; border-bottom: 0;
   transition: background var(--dur-med) var(--ease),
+              color var(--dur-med) var(--ease),
               box-shadow var(--dur-med) var(--ease),
               transform var(--dur-med) var(--ease);
 }
