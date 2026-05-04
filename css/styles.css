@@ -777,6 +777,69 @@ a:hover { border-bottom-color: var(--focs-gold); }
 .legal-page li { font-size: 15px; line-height: 1.7; color: var(--focs-charcoal); margin-bottom: 6px; }
 
 /* =========================================================================
+   MOBILE CENTERING (≤ 767px)
+   Desktop stays left-aligned. On phones, headings, eyebrows, intros,
+   stats, and card text all center so the eye travels straight down.
+   ========================================================================= */
+@media (max-width: 767px) {
+
+  /* Hero */
+  .hero { text-align: center; }
+  .hero__title { max-width: none; }
+  .hero__sub { max-width: none; }
+  .hero__ctas { justify-content: center; }
+
+  /* Section headers */
+  .section__header { text-align: center; }
+  .section__title { max-width: none; }
+  .section__intro { max-width: none; }
+
+  /* Eyebrow labels everywhere */
+  .eyebrow { text-align: center; }
+
+  /* Stat cards — center the text inside each card */
+  .stat-card { text-align: center; }
+
+  /* Numbered cards */
+  .num-card { text-align: center; align-items: center; }
+
+  /* Process steps */
+  .process-item { flex-direction: column; align-items: center; text-align: center; }
+  .process-item__num { min-width: auto; }
+
+  /* Two-column sections */
+  .two-col__col { text-align: center; }
+  .two-col__col ul { text-align: left; display: inline-block; }
+
+  /* Takeaway */
+  .takeaway { text-align: center; }
+  .takeaway__body { max-width: none; }
+
+  /* Investor profile cards */
+  .profile-card { text-align: center; }
+
+  /* Team cards */
+  .team-card { text-align: center; align-items: center; display: flex; flex-direction: column; }
+  .team-card__photo { margin-left: auto; margin-right: auto; }
+  .team-card__bio { max-width: none; }
+
+  /* CTA band */
+  .cta-band__inner { text-align: center; justify-content: center; flex-direction: column; align-items: center; }
+  .cta-band__headline { max-width: none; }
+  .cta-band__actions { justify-content: center; }
+
+  /* Contact section */
+  .contact-info { text-align: center; }
+  .contact-info address { text-align: center; }
+
+  /* Step cards */
+  .step-card { text-align: center; }
+
+  /* Track cards */
+  .track-card { text-align: center; }
+}
+
+/* =========================================================================
    SKIP LINK (accessibility)
    ========================================================================= */
 .skip-link {
